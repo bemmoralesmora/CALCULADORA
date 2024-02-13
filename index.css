@@ -1,0 +1,48 @@
+:root{
+    --color1: #c5c5c5;
+    --color11:#0a191e;
+    --color111: #09b5cf;
+
+
+}
+
+main {
+    width: 400px;
+    height: 600px;
+    background-color: var(--color1);
+
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 400px;
+}
+.pantalla {
+    font-size: 70px;
+    font-weight: 600;
+    text-align: right;
+    padding: 50px;
+
+}
+.teclado {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5,71px);
+    gap: 10px;
+}
+.tacla {
+    font-size: 40px;
+    font-size: 40px;
+    color: var(--color11);
+    background-color: aquamarine;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tecla0 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
